@@ -1,0 +1,267 @@
+/* ---- BROWSER COMPATABILITY ---- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+}
+
+/* ---- BASE ELEMENT STYLES ---- */
+html,
+body {
+  margin: 0 auto;
+  max-width: 1024px;
+  height: 100%;
+  color: black;
+  background-color: rgb(231, 229, 229);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  background-color: rgb(231, 229, 229);
+  padding: 20px;
+}
+
+h1,
+.top-nav {
+  text-align: center;
+}
+
+.topnav,
+.top-nav li {
+  width: 100%;
+}
+
+h1 a,
+.top-nav a {
+  color: #000;
+}
+
+.top-nav {
+  margin-top: 30px;
+}
+
+.top-nav li {
+  padding: 10px 0;
+  margin: 5px auto;
+  font-size: 0.85rem;
+  background-color: #fff;
+}
+
+.top-nav a {
+  text-transform: uppercase;
+}
+
+.top-nav a:hover {
+  color: rgb(4, 126, 163);
+}
+
+#portfolio {
+  text-align: center;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 3rem 0 1.5rem;
+}
+
+.bio {
+  max-width: 1100px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+h2 {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  padding: 1rem 0 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.biocol1,
+.biocol2 {
+  margin: 10px;
+  padding: 5px 0px;
+  color: black;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.col {
+  margin: 10px;
+  min-height: 250px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 5px;
+}
+
+.img {
+  width: 100%;
+}
+
+.propic {
+  width: 80%;
+}
+
+#contact {
+  text-align: center;
+  margin: auto;
+  padding: 2.5rem;
+  max-width: 550px;
+  height: auto;
+}
+
+#cont {
+  padding-top: 1rem;
+}
+.contact-info {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  margin-left: 1rem;
+}
+
+.divider {
+  border-bottom: 1px solid darkgrey;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 20px;
+  height: 100px;
+  background-color: rgb(231, 229, 229);
+}
+
+#footer {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.top {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.top a:hover {
+  color: rgb(4, 126, 163);
+}
+
+.full {
+  text-transform: uppercase;
+  display: none;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+/* ---- MEDIA QUERIES ---- */
+
+/* ---- MQ: TABLET SCREENS ---- */
+
+@media (min-width: 768px) {
+  .top-nav {
+    margin-top: 0;
+  }
+
+  .top-nav li {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    background-color: transparent;
+  }
+
+  .top-nav li:last-child {
+    margin-right: 0;
+  }
+
+  .container,
+  .bio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col,
+  .biocol1,
+  .biocol2 {
+    flex-basis: calc(50% - 20px);
+  }
+
+  .biocol1 {
+    text-align: left;
+  }
+
+  .biocol2 {
+    order: 2;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .full {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .full a:hover {
+    color: rgb(4, 126, 163);
+  }
+}
+
+/* ---- MQ: DESKTOP SCREENS ---- */
+
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top-nav,
+  .top-nav li {
+    width: initial;
+    margin-bottom: 0;
+  }
+
+  .col {
+    flex-basis: calc(33.333% - 20px);
+  }
+
+  .biocol1 {
+    flex-grow: 3;
+  }
+}
